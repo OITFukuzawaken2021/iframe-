@@ -6,7 +6,7 @@
         <link href="label.css" rel="stylesheet"/>
     </head>
     <body>
-        <iframe id="frame1" src="./frame1.html"></iframe>
+        <iframe id="frame1" name="frame1" src="./frame1.html"></iframe>
         <p id="counter">0</p>
         <label class="open" for="pop-up">警告(仮)</label>
         <input type="checkbox" id="pop-up">
@@ -20,7 +20,7 @@
         <script>
             function changep(){
                 document.getElementById("CP").innerHTML="changed";
-                document.getElementById("frame1").src="./frame2.html";
+                frame1.document.getElementById("child").src="./frame2.html";
             }
         </script>
     </body>
