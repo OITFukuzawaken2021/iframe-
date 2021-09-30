@@ -5,5 +5,16 @@
     </head>
     <body>
         <p>before change</p>
+        <input type="button" value="カウントアップ" onclick="CountUp();"/>
+        <script>
+            let counter = 0;
+            function CountUp(){
+                counter = counter + 1;
+                top.document.getElementById("counter").innerHTML=counter;
+                //var flag = parent.document.getElementById("pop-up").checked;
+                //parent.document.getElementById("pop-up").checked = true;
+                top.changep();
+            }
+        </script>
     </body>
 </html>
